@@ -8,24 +8,24 @@ if get_ip_response.status_code == 200:
     ip_info = ip_info_response.json()
 
     HTML_TEMPLATE = f"""<!doctype html>
-                        <html lang="ru">
-                        <head>
-                          <meta charset="utf-8" />
-                          <title></title>
-                          <link rel="stylesheet" href="style.css" />
-                        </head>
-                        <body>
-                          <p>IP address: {ip_info['ip']}</p>
-                          <p>City: {ip_info['city']}</p>
-                          <p>Region: {ip_info['region']}</p>
-                          <p>Country: {ip_info['country']}</p>
-                          <p>Location: {ip_info['loc']}</p>
-                          <p>Internet service provider: {ip_info['org']}</p>
-                          <p>Postal Code: {ip_info['postal']}</p>
-                          <p>Time Zone: {ip_info['timezone']}</p>
-                        </body>
-                        </html>
-                        """ 
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<p>IP address: {ip_info['ip']}</p>
+<p>City: {ip_info['city']}</p>
+<p>Region: {ip_info['region']}</p>
+<p>Country: {ip_info['country']}</p>
+<p>Location: {ip_info['loc']}</p>
+<p>Internet service provider: {ip_info['org']}</p>
+<p>Postal Code: {ip_info['postal']}</p>
+<p>Time Zone: {ip_info['timezone']}</p>
+</body>
+</html>
+""" 
 
     with open('result.html', 'w', encoding='utf-8') as file:
       file.write(HTML_TEMPLATE)
