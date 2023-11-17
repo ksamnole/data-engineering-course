@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<star>
+ <name>
+  Солнце 1234
+ </name>
+ <constellation>
+  Весы
+ </constellation>
+ <spectral-class>
+  M8H
+ </spectral-class>
+ <radius>
+  750563783
+ </radius>
+ <rotation>
+  522.44 days
+ </rotation>
+ <age>
+  1.32 billion years
+ </age>
+ <distance>
+  5965400.07 million km
+ </distance>
+ <absolute-magnitude>
+  1.53 million km
+ </absolute-magnitude>
+</star>
