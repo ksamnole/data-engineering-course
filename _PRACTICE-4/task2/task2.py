@@ -77,7 +77,7 @@ def query3(cursor):
 connection = sqlite3.connect('../task1/task1.db')
 cursor = connection.cursor()
 create_table_if_not_exist(cursor)
-insert_data(connection, data=get_data("task_2_var_25_subitem.pkl"))
+# insert_data(connection, data=get_data("task_2_var_25_subitem.pkl"))
 
 query1(cursor)
 query2(cursor)
